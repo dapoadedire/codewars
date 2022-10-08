@@ -1,18 +1,13 @@
+def check_limit(value):
+    if value < 0:
+        value = 0
+    elif value > 255:
+        value = 255
+    return value
+
 def rgb(r, g, b):
-    if r < 0:
-        r = 0
-    elif r > 255:
-        r = 255
-    if g < 0:
-        g = 0
-    elif g > 255:
-        g = 255
-    if b < 0:
-        b = 0
-    elif b > 255:
-        b = 255
     hex_code = []
-    for i in [r, g, b]:
+    for i in [check_limit(r), check_limit(g), check_limit(b)]:
         hex_code.append(hex(i)[2:].zfill(2).upper())
         
 
