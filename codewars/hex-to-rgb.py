@@ -7,8 +7,6 @@ def hex_string_to_RGB(hex_string):
     return rgb_dict
 
 
-
-
 print(hex_string_to_RGB("#FF9933"))
 print(hex_string_to_RGB("#beaded"))
 print(hex_string_to_RGB("#000000"))
