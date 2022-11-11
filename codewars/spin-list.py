@@ -6,4 +6,5 @@ def spin_words(sentence):
             sentence_list[i] = sentence_list[i][::-1]
     return " ".join(sentence_list)
 
+
 print(spin_words("This is another test"))

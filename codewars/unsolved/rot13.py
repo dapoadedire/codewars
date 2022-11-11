@@ -1,7 +1,6 @@
 # import string
 
 
-
 # def checkLetter(letter):
 #     if letter in string.ascii_lowercase:
 #         letterIndex = string.ascii_lowercase.index(letter)
@@ -61,7 +60,8 @@ rot13Dict = {
     "w": "j",
     "x": "k",
     "y": "l",
-    "z": "m"}
+    "z": "m",
+}
 
 
 def rot13(message):
@@ -69,11 +69,13 @@ def rot13(message):
         if letter in rot13Dict:
             message = message.replace(letter, rot13Dict[letter])
         elif letter.lower() in rot13Dict:
-            message = message.replace(letter, rot13Dict[letter.lower()].upper())
+            message = message.replace(
+                letter, rot13Dict[letter.lower()].upper())
         else:
             message = message.replace(letter, letter)
         print(message)
     return message
+
 
 print(rot13("How can you tell"))
 # Reverse
