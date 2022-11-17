@@ -9,4 +9,3 @@ def remove_smallest(numbers):
 
 numbers = [1, 12, 3, 0, 5, -3, 7, 8, 9, 10]
 print(remove_smallest(numbers))
-
