@@ -1,7 +1,7 @@
 # a year is 365 days and a day is 24 hours.
 def format_duration(seconds):
     if seconds == 0:
-        return 'now'
+        return "now"
 
     else:
         readable_list = ["years", "days", "hours", "minutes", "seconds"]
@@ -10,7 +10,8 @@ def format_duration(seconds):
         hours = ((seconds % 31536000) % 86400) // 3600
         minutes = (((seconds % 31536000) % 86400) % 3600) // 60
         seconds = (((seconds % 31536000) % 86400) % 3600) % 60
-        readable_dict = dict(zip(readable_list, [years, days, hours, minutes, seconds]))
+        readable_dict = dict(
+            zip(readable_list, [years, days, hours, minutes, seconds]))
         if seconds == 0:
             readable_dict.pop("seconds")
         if minutes == 0:
@@ -32,8 +33,9 @@ def format_duration(seconds):
             return readable[0]
         elif len(readable) == 2:
             return " and ".join(readable)
-        elif len(readable) >2:
+        elif len(readable) > 2:
             return ", ".join(readable[:-1]) + " and " + readable[-1]
+
 
 print(format_duration(1))
 print(format_duration(62))
