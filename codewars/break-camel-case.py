@@ -1,13 +1,15 @@
 # Solution
 
+
 def solution(s):
     for i in s:
         if i.isupper():
-            if (s[s.index(i)-1] == " ") or (s[s.index(i)-1] == "-"):
+            if (s[s.index(i) - 1] == " ") or (s[s.index(i) - 1] == "-"):
                 pass
             else:
-                s = s.replace(i, ' ' + i)
+                s = s.replace(i, " " + i)
     return s
+
 
 print(solution("camelCasingMe"))
 print(solution("highPublicWorldFactProblem"))

@@ -3,7 +3,8 @@ def make_readable(seconds):
     readable.append(str(seconds // 3600).zfill(2))
     readable.append(str((seconds % 3600) // 60).zfill(2))
     readable.append(str((seconds % 3600) % 60).zfill(2))
-    return ':'.join(readable)
+    return ":".join(readable)
+
 
 print(make_readable(0))
 print(make_readable(5))
