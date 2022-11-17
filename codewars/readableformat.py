@@ -2,7 +2,7 @@
 def format_duration(seconds):
     if seconds == 0:
         return 'now'
-    
+
     else:
         readable_list = ["years", "days", "hours", "minutes", "seconds"]
         years = seconds // 31536000
@@ -34,7 +34,7 @@ def format_duration(seconds):
             return " and ".join(readable)
         elif len(readable) >2:
             return ", ".join(readable[:-1]) + " and " + readable[-1]
-        
+
 print(format_duration(1))
 print(format_duration(62))
 print(format_duration(120))

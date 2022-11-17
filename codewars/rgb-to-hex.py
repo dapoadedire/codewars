@@ -9,7 +9,7 @@ def rgb(r, g, b):
     hex_code = []
     for i in [check_limit(r), check_limit(g), check_limit(b)]:
         hex_code.append(hex(i)[2:].zfill(2).upper())
-        
+
 
     return "".join(hex_code)
 

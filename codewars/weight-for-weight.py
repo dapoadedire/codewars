@@ -3,7 +3,7 @@ def sum_string(string):
 
 def order_weight(strng):
     return " ".join(sorted(strng.split(), key=lambda x: (sum_string(x), x)))
-    
+
 
 
 print(order_weight("103 123 4444 99 2000"))#, "2000 103 123 4444 99")
