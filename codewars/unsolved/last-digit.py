@@ -3,5 +3,4 @@ def last_digit(n1, n2):
     return digit
 
 
-# print(last_digit(4, 1))
 print(last_digit(2**200, 2**300))
