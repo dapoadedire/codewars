@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist", // where to put the TS files
+        "target": "ES2022", // which level of JS support to target
+        "module": "CommonJS", // which module system to use
+        "strictNullChecks": true, // strict null checks
+        "strictFunctionTypes": true, // strict function types
+        // "sourceMap": true, // generate source maps
+        "removeComments": true, // remove comments
+        "noImplicitAny": true, // no implicit any
+        "allowUnreachableCode": false, // no unreachable code
+        "allowUnusedLabels": false, // no unused labels
+    },
+    "include": [
+        "src"
+    ] // which files to compile  
+}
